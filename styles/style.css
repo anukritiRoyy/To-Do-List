@@ -1,5 +1,33 @@
+* {
+  font-family: "Yomogi", cursive;
+  font-size: 18px !important;
+  font-weight: 900 !important;
+}
+
 body {
-  background-image: linear-gradient(150deg, #833ab4 30%, #fc4545 100%);
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png) repeat;
+}
+
+body .h1 {
+  background: -webkit-linear-gradient(black, #e600a8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (min-width: 320px) {
+  body {
+    padding: 3%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    padding: 10%;
+  }
+}
+
+.wrapper-class {
+  background-color: linear-gradient(126deg, #22c1c3 0%, #fdbb2d 100%);
 }
 
 .wrapper {
@@ -8,6 +36,75 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: coral;
+  background-image: linear-gradient(126deg, #22c1c3 0%, #fdbb2d 100%);
+  width: 100%;
+}
+
+@media only screen and (min-width: 320px) {
+  .wrapper {
+    border-radius: 18px;
+    -webkit-box-shadow: rgba(50, 50, 93, 0.65) 0px 30px 60px -12px, rgba(0, 0, 0, 0.45) 0px 18px 36px -18px;
+            box-shadow: rgba(50, 50, 93, 0.65) 0px 30px 60px -12px, rgba(0, 0, 0, 0.45) 0px 18px 36px -18px;
+  }
+}
+
+.wrapper input {
+  height: 2rem;
+  border-radius: 18px;
+  padding: 12px 18px;
+}
+
+.wrapper textarea:focus, .wrapper input:focus {
+  outline: none;
+}
+
+.wrapper .inputClass button {
+  border-radius: 15px;
+  background: #8E49E8;
+  color: #fff;
+  border: none;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.wrapper .inputClass button button:active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.wrapper .todoList {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.wrapper .todoList li {
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  background: rgba(242, 242, 242, 0.5);
+  border-radius: 3px;
+  margin-bottom: 5px;
+  padding: 0 25px 0 15px;
+  width: 87%;
+}
+
+.wrapper .todoList li span {
+  float: right;
+  color: #d83c2b;
+  cursor: pointer;
+}
+
+.wrapper .footer button {
+  padding: 6px 12px;
+  border-radius: 15px;
+  background: #8E49E8;
+  color: #fff;
+  border: none;
+  font-family: "Yomogi", cursive;
+  float: right;
+}
+
+.wrapper .footer span {
+  font-family: "Yomogi", cursive;
 }
 /*# sourceMappingURL=style.css.map */
