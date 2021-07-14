@@ -1,10 +1,13 @@
 // getting all required elements
 const inputBox = document.querySelector('.inputClass input');
-const addbtn = document.querySelector('.inputClass button');
+const addBtn = document.querySelector('.inputClass button');
 
-inputBox.onkeyup() => {
+
+// onkeyup EVENTS
+addBtn.disabled = true;
+inputBox.onkeyup = () => {
    let userData = inputBox.value;               // fetching user input
-   if(userData.trim() != 0) {                   // if input isn't only spaces
+   if(userData != 0) {                          // if there is value in input filed
       addBtn.classList.add('active');           // then make the btn active
    }
    else {

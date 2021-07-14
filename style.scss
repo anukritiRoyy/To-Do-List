@@ -1,0 +1,129 @@
+@import 'variables';
+
+* {
+   font-family: $font;
+   font-size: 18px!important;
+   font-weight: 900!important;
+}
+body {
+   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png) repeat; 
+
+   @media only screen and (min-width: 320px) {
+      padding: 3%;
+   }
+   @media only screen and (min-width: 600px) {
+      padding: 10%;
+   }
+
+   .h1 {
+      background: -webkit-linear-gradient(black,#e600a8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+}
+
+.wrapper-class {
+   background-color: $card-bg-color;
+
+   .wrapper {
+      display: block;
+      padding: 25px;
+      justify-content: center;
+      background-image: $card-bg-color;
+      width: 100%;
+      
+      @media only screen and (min-width: 320px) {
+         border-radius: 18px;
+         box-shadow: rgba(50, 50, 93, 0.65) 0px 30px 60px -12px, rgba(0, 0, 0, 0.45) 0px 18px 36px -18px;
+      }
+   
+      input {
+         height: 2rem;
+         border-radius: 18px;
+         padding: 12px 18px;
+         transition: all 0.3s ease;
+      }
+   
+      textarea:focus, input:focus{
+         outline: none;
+     }
+   
+      .inputClass button {
+         border-radius: 15px;
+         background:$input-button;
+         color: #fff;
+         border:none ;
+         opacity: 0.6;
+         pointer-events: none;
+      }
+
+      .inputClass button.active {
+         opacity: 1;
+         pointer-events: auto;
+      }
+   
+      .todoList {
+         max-height: 250px;
+         overflow-y: auto;
+      }
+   
+      .todoList li {
+         list-style: none;
+         height: 45px;
+         line-height: 45px;
+         background:rgba(242, 242, 242, 0.5);
+         border-radius: 3px;
+         margin-bottom: 5px;
+         padding:0 25px 0 15px ;
+         width: 87%;
+   
+         span {
+            float: right;
+            color: $trash-icon;
+            cursor: pointer;
+         }
+      }
+   
+      .footer {
+         button {
+            padding: 6px 12px;
+            border-radius: 15px;
+            background:#8E49E8;
+            color: #fff;
+            border:none ;
+            font-family: $font;
+            float: right;
+         }
+         span {
+            font-family: $font;
+         }
+      }
+   }
+}
+
+
+// .all-breakpoints {
+//    /* Extra small devices (phones, 600px and down) */
+// @media only screen and (max-width: 600px) {
+//    .example {background: red;}
+//  }
+ 
+//  /* Small devices (portrait tablets and large phones, 600px and up) */
+//  @media only screen and (min-width: 600px) {
+//    .example {background: green;}
+//  }
+ 
+//  /* Medium devices (landscape tablets, 768px and up) */
+//  @media only screen and (min-width: 768px) {
+//    .example {background: blue;}
+//  } 
+ 
+//  /* Large devices (laptops/desktops, 992px and up) */
+//  @media only screen and (min-width: 992px) {
+//    .example {background: orange;}
+//  } 
+ 
+//  /* Extra large devices (large laptops and desktops, 1200px and up) */
+//  @media only screen and (min-width: 1200px) {
+//    .example {background: pink;}
+//  }
